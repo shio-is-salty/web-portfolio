@@ -5,9 +5,9 @@ import millenniumElectronicsImg from "../assets/millennium-electronics.png"
 import momotalkImg from "../assets/momotalk.png"
 const Works = () => {
     return (
-        <section className="mt-16 font-mono text-white">
+        <section id="works" className="font-mono text-white pb-16">
             <h1 className="text-3xl font-medium text-white pb-2 border-b-2 border-green-500">Projects I've Build</h1>
-            <div className="mt-4 grid grid-cols-3 gap-1">
+            <div className="mt-4 sm:grid-cols-2 grid lg:grid-cols-3 gap-4 md:gap-1">
                 <div className="p-4 w-full">
                     <img className="w-full h-full " src={momotalkImg} alt="" />
                     <h1 className="text-xl font-medium">Momotalk Chat App</h1>

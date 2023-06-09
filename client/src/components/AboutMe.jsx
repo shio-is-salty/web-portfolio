@@ -4,10 +4,10 @@ import { SiMongodb, SiExpress, SiNodedotjs,
 import { FaJava } from "react-icons/fa"
 const AboutMe = () => {
     return (
-        <section className="font-mono text-white">
+        <section id="about" className="font-mono text-white pb-16">
             <h1 className="text-3xl font-medium text-white pb-2 border-b-2 border-green-500">About Me</h1>
 
-            <div className="p-4 flex gap-32 justify-center ">
+            <div className="p-4 flex flex-col md:flex-row gap-16 lg:gap-32 justify-center ">
                 <div className="mt-4">
 
                     <p className="text-white max-w-sm">I am a 21 year old web developer in the philippines. I started learning coding when  I was 17 I've always been curios on how games website's or anyting computer related had been developed. So I decided to enroll in World Citi Colleges Antipolo as an SHS ICT Student. ever since I graduated I've been building and learning my skills to become a great programmer.</p>

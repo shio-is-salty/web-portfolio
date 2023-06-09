@@ -2,8 +2,12 @@ import meImg from "../assets/me.jpg"
 import {BsDownload, BsChevronDoubleDown} from "react-icons/bs"
 const Hero = () => {
     return (
-        <section className="mt-8 h-screen">
-            <div className="flex justify-center items-center gap-4 text-white font-mono">
+        <section id="home" className="py-16 pb-32 ">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-white font-mono">
+                 <div className="sm:block md:hidden max-w-[300px] max-h-[300px] rounded-full shadow-gray-600  shadow-sm">
+                    <img className="w-full h-full rounded-full" src={meImg} alt="" />
+                </div>
+
                 <div className="flex flex-col gap-1 max-w-lg">
                     <h1 className="text-6xl">Kyle  Pagayon</h1>
                     <h1 className="text-xl font-bold">Junior full stack web developer</h1>
@@ -15,7 +19,7 @@ const Hero = () => {
                     </button>
                 </div>
 
-                <div className="max-w-[360px] max-h-[360px] rounded-full shadow-gray-600  shadow-sm">
+                <div className="hidden md:block max-w-[360px] max-h-[360px] rounded-full shadow-gray-600  shadow-sm">
                     <img className="w-full h-full rounded-full" src={meImg} alt="" />
                 </div>
             </div>
