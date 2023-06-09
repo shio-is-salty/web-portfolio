@@ -1,31 +1,23 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import AboutMe from "./components/AboutMe"
-import Works from "./components/Works"
-import Contact from "./components/Contact"
+import Layout from "./components/Layout"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import {BsArrowUpSquareFill} from "react-icons/bs"
 import axios from "axios"
+import IndexPage from "./Pages/IndexPage"
+import ProjectPage from "./Pages/ProjectPage"
 axios.defaults.baseURL = "http://localhost:4000"
 
 function App() {
   return (
-    <div className="px-8 pb-16 relative">
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Works />
-      <Contact />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<IndexPage />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+        </Route>
+      </Routes>
 
-      <div
-        onClick={() => {
-          window.scrollTo(0,0)
-        }}
-       className="underline text-center text-white cursor-pointer">
-        Go back to top
-      </div>
+    </BrowserRouter>
 
-     </div>
   )
 }
 

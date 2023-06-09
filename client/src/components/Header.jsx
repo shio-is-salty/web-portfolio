@@ -5,7 +5,7 @@ import { HiMenu } from "react-icons/hi"
 const Header = () => {
     const [isMenu, setIsMenu] = useState(false)
     return (
-        <header className="">
+        <header className="px-8">
             <div className="flex justify-between items-center py-6">
                 <div className="text-white font-mono font-bold text-xl flex items-center gap-1 cursor-pointer">
                     <BsCodeSlash className="text-3xl text-green-500"/>
