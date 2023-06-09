@@ -1,16 +1,16 @@
 import {useState} from "react"
 import {BsCodeSlash} from "react-icons/bs"
 import { HiMenu } from "react-icons/hi"
-
+import {Link} from "react-router-dom"
 const Header = () => {
     const [isMenu, setIsMenu] = useState(false)
     return (
         <header className="px-8">
             <div className="flex justify-between items-center py-6">
-                <div className="text-white font-mono font-bold text-xl flex items-center gap-1 cursor-pointer">
+                <Link to="/" className="text-white font-mono font-bold text-xl flex items-center gap-1 cursor-pointer">
                     <BsCodeSlash className="text-3xl text-green-500"/>
                     <h1 className="-mt-1">Kyle Pagayon</h1> 
-                </div>
+                </Link>
 
                 <HiMenu
                     onClick={() => setIsMenu(prev => !prev) }
