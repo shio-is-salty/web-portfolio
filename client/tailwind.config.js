@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nabla: ['Nabla', 'cursive'],
         mono: ['IBM Plex Mono', 'monospace'],
       }
     },
